@@ -47,7 +47,7 @@ string reverseString(string str) {
 
 // Driver code
 int main() {
-	string str = "I will reverse this string";
+	string str = "I will reverse in C++";
 
 	// Function call
 	string rev = reverseString(str);
