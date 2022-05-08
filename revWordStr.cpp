@@ -1,4 +1,6 @@
 // C++ program for the above approach
+#include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -45,7 +47,7 @@ string reverseString(string str) {
 
 // Driver code
 int main() {
-	string str = "I like this code";
+	string str = "I will reverse this string";
 
 	// Function call
 	string rev = reverseString(str);
