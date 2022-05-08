@@ -1,11 +1,9 @@
-// C program to reverse a string
+//C program to reverse a string by words
+//By: Jacob Hartmann
 #include <stdio.h>
 
-// Function to reverse any sequence
-// starting with pointer begin and
-// ending with pointer end
-void reverse(char* begin, char* end)
-{
+//Function to reverse any sequence starting with pointer begin and ending with pointer end
+void reverse(char* begin, char* end) {
 	char temp;
 	while (begin < end) {
 		temp = *begin;
@@ -14,16 +12,14 @@ void reverse(char* begin, char* end)
 	}
 }
 
-// Function to reverse words*/
-void reverseWords(char* s)
-{
+//Function to reverse words
+void reverseString(char* s) {
 	char* word_begin = s;
-
-	// Word boundary
+	//Word boundary
 	char* temp = s;
 
-	// Reversing individual words as
-	// explained in the first step
+	//Reversing individual words as
+	//explained in the first step
 	while (*temp) {
 		temp++;
 		if (*temp == '\0') {
@@ -34,17 +30,15 @@ void reverseWords(char* s)
 			word_begin = temp + 1;
 		}
 	}
-
-	// Reverse the entire string
+	//Reverse the entire string
 	reverse(s, temp - 1);
 }
 
-// Driver Code
-int main()
-{
+//Driver Code
+int main() {
 	char s[] = "I will reverse in C";
 	char* temp = s;
-	reverseWords(s);
+	reverseString(s);
 	printf("%s", s);
 	return 0;
 }
